@@ -2,15 +2,24 @@ html, body {
   width: 100% auto;
   height: 100% auto;
   background-color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container {
-  width: 85%;
+  width: 90%;
   height: auto;
+  background-color: antiquewhite;
 }
 
 .menu {
+  width: 90%;
+  height: auto;
+  background-color: antiquewhite;
+}
 
+.menu table td th {
+  width: max-content;
+  height: fit-content;
 }
 
 .content {
