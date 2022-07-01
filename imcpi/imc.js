@@ -1,1 +1,3 @@
-console.log('incializing system...')
+function calcimc(altura, peso) {
+  return peso/(altura*altura);
+}
