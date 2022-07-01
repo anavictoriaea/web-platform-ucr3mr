@@ -1,18 +1,13 @@
 function pesoideal() {
-  var altura = parseFloat(document.formPI.altura);
-  var sexof = document.formPI.feminino;
-  var sexom = document.formPI.masculino;
+  var altura = parseFloat(document.formPI.altura.value);
+  var sexo = document.formPI.sexo.value;
 
   if (altura <= 0) {
     alert("Digite a altura novamente.");
-  } else if (sexof == true) {
-    if (sexom == true) {
-      alert("Selecione apenas um sexo.")
-    } else {
+  } else if (sexo == "feminino") {
       var pesoi = (62.1 * altura) - 44.7;
       document.getElementById("resultado").textContent = "Seu peso ideal é " + pesoi.toFixed(2) +" kg."
-    }
-  } else if (sexom == true) {
+  } else if (sexo == "masculino") {
     var pesoi = (72.7 * altura) - 58;
       document.getElementById("resultado").textContent = "Seu peso ideal é " + pesoi.toFixed(2) +" kg."
   } else {

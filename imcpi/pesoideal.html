@@ -23,10 +23,10 @@
       <p>Selecione o sexo correspondente e insira a sua altura. Depois clique em "Calcular Peso Ideal" para saber seu peso ideal baseado na sua altura.</p>
       <form name="formPI">
         <p><strong>Sexo</strong></p>
-        <input type="checkbox" name="feminino" value="true" /> Feminino
-        <input type="checkbox" name="masculino" value="true" /> Masculino
+        <input type="radio" name="sexo" value="feminino" /> Feminino
+        <input type="radio" name="sexo" value="masculino" /> Masculino
         <p><strong>Altura</strong> (em metros, use ponto)</p>
-        <input type="text" name="altura" /> <br><br>
+        <input type="text" name="altura" value=0 /> <br><br>
         <input type="button" value="Calcular Peso Ideal" onclick="pesoideal()" />
         <p id="resultado"></p>
       </form>
