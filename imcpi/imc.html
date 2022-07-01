@@ -28,6 +28,12 @@
       <div>
         <h2>Calcular IMC</h2>
         <p>Digite seus dados de acordo com o pedido e clique em "Calcular IMC" para saber o seu índice de massa corpórea.</p>
+        <form name="formImc">
+          Peso (kg, use ponto): <input type="text" name="peso" /> <br>
+          Altura (m, use ponto): <input type="text" name="altura" /> <br> <br>
+          <input type="button" value="Calcular IMC" onclick="imc()">
+          <p id="resultado"></p>
+        </form>
       </div>
       <footer>
         <p>Desenvolvido por <a href="https://github.com/anavictoriaea">Ana Victória</a></p>
